@@ -20,5 +20,5 @@ Para esta prueba se crearon 6 capas:
 
 
 # Descripcion 
-la peticion inicial es la de login en la cual se envia el usuario y la clave y este devuelve un token con el rol del usario, este token se debe enviar el los headers de las demas peticiones  para validar  los permisos de la Api
+la peticion inicial es la de login en la cual se envia el usuario y la clave y este devuelve un token con el rol del usario, este token se debe enviar en los headers de las demas peticiones  para validar  los permisos de la Api
 
