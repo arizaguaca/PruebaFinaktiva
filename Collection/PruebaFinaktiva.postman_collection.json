@@ -1,0 +1,193 @@
+{
+	"info": {
+		"_postman_id": "34cffcfe-b13f-40cf-97f7-42f3ff5aa89e",
+		"name": "PruebaFinaktiva",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GetUser",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiMiIsIm5iZiI6MTYzNDAxMDc2MywiZXhwIjoxNjM0MDE0MzYzLCJpYXQiOjE2MzQwMTA3NjMsImlzcyI6IlBydWViYSIsImF1ZCI6InVzZXJzIn0.D-aw7MW8WZs6bMsZEd8vcOz5hSPg9Qli_T7eaAqW0qw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:57205/user/GetAll",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "57205",
+					"path": [
+						"user",
+						"GetAll"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateUser",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiMSIsIm5iZiI6MTYzNDAxMDg0NywiZXhwIjoxNjM0MDE0NDQ3LCJpYXQiOjE2MzQwMTA4NDcsImlzcyI6IlBydWViYSIsImF1ZCI6InVzZXJzIn0.-ygFOghT6uX4l6gM0bQTaynxZDA40UwMM012sGjmh5o",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \r\n    \"name\":\"CARLOS200\",\r\n    \"password\":\"12345\",\r\n    \"IdRol\":2\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:57205/user/Create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "57205",
+					"path": [
+						"user",
+						"Create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n\"User\":\"Victor\",\r\n\"Pass\":\"123\"\r\n\r\n}\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:57205/login/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "57205",
+					"path": [
+						"login",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateUser",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiMiIsIm5iZiI6MTYzMzkxNjkyMSwiZXhwIjoxNjMzOTIwNTIxLCJpYXQiOjE2MzM5MTY5MjEsImlzcyI6IlBydWViYSIsImF1ZCI6InVzZXJzIn0.n5xlvu8OcjC9pgsZSEMV25sOGrEBjz56-f2kG_cb4Pw545bhghfghfg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{  \"idUser\":7,\r\n    \"name\":\"MANY\",\r\n    \"password\":\"6789\",\r\n    \"IdRol\":2\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:57205/user/Update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "57205",
+					"path": [
+						"user",
+						"Update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteUser",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiMSIsIm5iZiI6MTYzNDA1NDY3NiwiZXhwIjoxNjM0MDU4Mjc2LCJpYXQiOjE2MzQwNTQ2NzYsImlzcyI6IlBydWViYSIsImF1ZCI6InVzZXJzIn0.SfGQJIvz3WS5dJJvTqG-JLF7Ilr12XQgXmER3W2f9tE",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n\r\n{  \"idUser\":13\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:57205/user/Delete",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "57205",
+					"path": [
+						"user",
+						"Delete"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
